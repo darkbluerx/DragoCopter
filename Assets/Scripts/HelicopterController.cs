@@ -5,36 +5,30 @@ using UnityEngine;
 
 public class HelicopterController : MonoBehaviour
 {
-
+    public GameManager gameManager;
     Rigidbody2D rb;
 
     [SerializeField] float velocity = 10f;
-
 
     private void Awake()
     {
        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-
-        //laita painalluksella ja pyyhk‰isyll‰
-
-        if(Input.GetMouseButtonDown(0)) 
+        //if(Input.GetMouseButtonDown(0)) 
+        foreach (Touch touch in Input.touches)
         {
-            //rb.AddForce(transform.up * speed, ForceMode2D.Impulse);
-            rb.velocity = Vector2.up * velocity;
-            Debug.Log("Lent‰‰");
+            if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved)
+            {
+                rb.velocity = Vector2.up * velocity;
+            }
         }
     }
 
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        gameManager.GameOver();
+    }
 }
