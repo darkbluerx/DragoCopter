@@ -30,6 +30,12 @@ public class HelicopterController : MonoBehaviour
 
     void Update()
     {
+        if (IsDead == true) return;
+        Fly();
+    }
+
+    private void Fly()
+    {
         foreach (Touch touch in Input.touches)
         {
             if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved)
