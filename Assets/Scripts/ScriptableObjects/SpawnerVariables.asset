@@ -18,6 +18,6 @@ MonoBehaviour:
   minUpperHeight: 5
   maxUpperHeight: 4.5
   midHeight: 1.5
-  minLowerHeight: -4.5
-  maxLowerHeight: -5
+  minLowerHeight: -5
+  maxLowerHeight: -6
   obstaclesTimer: 2

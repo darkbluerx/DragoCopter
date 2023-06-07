@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using System.Diagnostics;
 
 public class Score : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Score : MonoBehaviour
     [SerializeField] TMP_Text highScoreText;
 
     int score;
+    bool IsDead;
 
     private void Awake()
     {
@@ -23,6 +25,7 @@ public class Score : MonoBehaviour
 
     void Start()
     {
+        IsDead = false;
         currentScoreText.text = score.ToString();
         highScoreText.text = PlayerPrefs.GetInt("HighScore",0).ToString();
         UpdateHighScore();
@@ -30,7 +33,7 @@ public class Score : MonoBehaviour
 
     private void Update()
     {
-        UpdateScore();
+       if(IsDead == false) UpdateScore();
     }
 
     private void UpdateHighScore()
@@ -47,5 +50,11 @@ public class Score : MonoBehaviour
         score += 1;
         currentScoreText.text = score.ToString();
         UpdateHighScore();
+    }
+
+    public void StopScore()
+    {
+        IsDead = true;
+        currentScoreText.text = score.ToString();
     }
 }
