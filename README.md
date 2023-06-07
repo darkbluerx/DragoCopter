@@ -1,2 +1,32 @@
 # DragoCopter
  
+
+Lähteet:
+
+------Sprites-----
+
+2D Pixel Art Dragonfly Sprites
+
+https://elthen.itch.io/2d-pixel-art-dragonfly-sprites
+
+
+Fruits and veggies asset pack
+
+https://helm3t.itch.io/free-32x32-fruits-and-veggies-asset-packs/download/eyJpZCI6MTk0MDI1MSwiZXhwaXJlcyI6MTY4NTk2MzY5OH0%3d%2e4SqC8JJR0BkRx9H%2bW2E6qoo%2f604%3d
+
+
+Just a grass
+
+https://lelex-game-and-art-maker.itch.io/just-a-grass
+
+
+-----Audio-----
+
+Download "A Bit Of Hope" by David Fesliyan
+
+https://www.fesliyanstudios.com/royalty-free-music/download/a-bit-of-hope/565
+
+
+Free Hurt Sound Effects 
+
+https://mixkit.co/free-sound-effects/hurt/
