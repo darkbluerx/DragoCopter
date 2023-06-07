@@ -11,10 +11,6 @@ public class SimplySpawner : MonoBehaviour
     [SerializeField] GameObject[] obstacles = new GameObject[3];
     [Space]
 
-    [Header("Timer for obstacles")]
-    [SerializeField] float obstaclesTimer = 2f;
-    [Space]
-
     [Header("Delay between obstacles")]
     [SerializeField] float minDelayTimer = 0f;
     [SerializeField] float maxDelayTimer = 3f;
@@ -23,16 +19,14 @@ public class SimplySpawner : MonoBehaviour
     private void Start()
     {
         //obstacles
-        coroutine = InstantiateObstacles(obstaclesTimer);
+        coroutine = InstantiateObstacles();
         StartCoroutine(coroutine);
     }
 
-    private IEnumerator InstantiateObstacles(float waitTime)
+    private IEnumerator InstantiateObstacles()
     {
         while (true)
         {
-            //yield return new WaitForSeconds(waitTime);
-
             yield return new WaitForSeconds(Random.Range(minDelayTimer, maxDelayTimer));
 
             //upper obstacle

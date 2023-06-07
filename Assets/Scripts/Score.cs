@@ -41,14 +41,14 @@ public class Score : MonoBehaviour
         if(score > PlayerPrefs.GetInt("HighScore"))
         {
             PlayerPrefs.SetInt("HighScore", score);
-            highScoreText.text = score.ToString();
+            highScoreText.text = "Best: " + score.ToString();
         }
     }
 
     public void UpdateScore()
     {
         score += 1;
-        currentScoreText.text = score.ToString();
+        currentScoreText.text = "Score: " + score.ToString();
         UpdateHighScore();
     }
 

@@ -157,7 +157,6 @@ MonoBehaviour:
   - {fileID: 7043062439917442662, guid: dc81184d0256b2e4cbdd8ba538cbc3f0, type: 3}
   - {fileID: 4398685707779379225, guid: dafd3dc70580846488750e16dce22182, type: 3}
   - {fileID: 938713768850338748, guid: 919fa517d09ad944a963d8488891e030, type: 3}
-  obstaclesTimer: 0.5
   minDelayTimer: 0
   maxDelayTimer: 2
 --- !u!4 &112253622
@@ -1514,7 +1513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1431567290
 Animator:
   serializedVersion: 5
@@ -1929,7 +1928,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -169, y: -69.00003}
-  m_SizeDelta: {x: 300, y: 40}
+  m_SizeDelta: {x: 320, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101825411
 MonoBehaviour:
